@@ -43,7 +43,7 @@ def process_turn(business_id: str, call_id: str, from_number: str,
                  f"Puedo ofrecerle hoy: {slots[0]} o {slots[1]}. ¿Le viene bien alguno?")
     elif intent == "precio":
         answer, _src = kb.answer(business_id, transcript)
-        base = answer or "la primera visita incluye valoración completa"
+        base = (answer or "la primera visita incluye valoración completa").rstrip(". ")
         reply = (f"Sobre precios: {base}. {dental.DISCLAIMER_CLINICO} "
                  "¿Quiere que le reserve una valoración sin compromiso?")
     elif intent == "horario":
