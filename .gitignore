@@ -3,4 +3,8 @@ __pycache__/
 .venv/
 *.db
 .env
+.env.local
 .pytest_cache/
+panel/node_modules/
+panel/.next/
+panel/out/
