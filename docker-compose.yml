@@ -1,0 +1,25 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8091:8091"
+    env_file: .env
+    environment:
+      CONTESTA_DB: /data/contesta.db
+    volumes:
+      - contesta-data:/data
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8091
+
+  # Prod/piloto: Postgres + pgvector para WeKnora y memoria Hindsight.
+  # Descomentar cuando RAG_ENGINE=weknora:
+  # db:
+  #   image: pgvector/pgvector:pg16
+  #   environment:
+  #     POSTGRES_DB: contesta
+  #     POSTGRES_PASSWORD: contesta
+  #   volumes:
+  #     - contesta-pg:/var/lib/postgresql/data
+
+volumes:
+  contesta-data:
+  # contesta-pg:
