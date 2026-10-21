@@ -211,3 +211,28 @@ Dockerfile + docker-compose.yml + .github/workflows/ci.yml
 
 Setup 1.100–1.800 €/sede + 190–320 €/mes. 2–3 primeras visitas recuperadas
 pagan el mes.
+
+## Quién lo mantiene
+
+**Plataforma IA** — consultora de automatización con IA para pymes en España
+(Madrid, presencial y remoto en toda España):
+<https://plataformaia.com>.
+
+Este repo es la prueba técnica pública de uno de sus servicios: recepción
+telefónica con IA conectada al conocimiento real del negocio. Si quieres ver
+cómo se plantea un piloto de 4 semanas sobre un solo proceso (métricas
+acordadas antes de empezar), empieza por
+<https://plataformaia.com/es/contacto>.
+
+Otros proyectos abiertos de la misma casa, relacionados con obligaciones
+técnicas de pymes españolas:
+
+- <https://github.com/caseroclaw/verifactu-qr> — QR y URL de cotejo de
+  VeriFactu (librería, CLI y servidor MCP), con el vector oficial de la AEAT.
+- <https://caseroclaw.github.io/verifactu-qr-web/> — el mismo generador, en
+  el navegador y sin instalar nada.
+- <https://caseroclaw.github.io/radar-ai-act/> — clasificador del nivel de
+  riesgo del reglamento europeo de IA para casos de uso de pyme.
+- <https://caseroclaw.github.io/roi-automatizacion-ia/> — calculadora de
+  amortización de un proyecto de automatización.
+
